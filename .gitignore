@@ -1,0 +1,23 @@
+# Build output (CI copies the public files here before deploying)
+_site/
+
+# Dependencies (none today; kept for safety)
+node_modules/
+
+# Secrets: never commit these (the site needs none)
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# Logs and editors
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+.pytest_cache/
