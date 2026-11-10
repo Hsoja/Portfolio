@@ -24,7 +24,7 @@ The site is static: no server code, no accounts, no forms, no database, no secre
 | gitleaks (`git`, full history) | ✅ No leaks (run before the first push and in CI) |
 | `scripts/scan_exposed_files.sh` | ✅ OK |
 | Manual search (password, token, api_key, secret, smtp, e-mails, phone numbers) | ✅ Nothing found |
-| Semgrep (`p/javascript`, `p/html`, `p/secrets`) | ⚠️ Not verified locally (rule registry blocked in the audit environment); runs in CI |
+| Semgrep (`p/javascript`, `p/python`, `p/secrets`) | ⚠️ Not verified locally (rule registry blocked in the audit environment); runs in CI |
 | `npm audit` | ➖ Not applicable (zero dependencies) |
 | Browser check (Chromium, desktop and mobile) | ✅ No console errors or CSP violations |
 | Anti-framing check (page loaded inside a foreign iframe) | ✅ Page hidden |

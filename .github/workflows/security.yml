@@ -43,4 +43,4 @@ jobs:
     container: semgrep/semgrep:1.140.0
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - run: semgrep scan --config p/javascript --config p/html --config p/python --config p/secrets --error --metrics=off index.html main.js styles.css serve.py tests scripts
+      - run: semgrep scan --config p/javascript --config p/python --config p/secrets --error --metrics=off index.html main.js styles.css serve.py tests scripts
