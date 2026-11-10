@@ -79,7 +79,7 @@ python3 serve.py                # then open http://127.0.0.1:8000
 - **Safe links**: every external link uses `rel="noopener noreferrer"` and points to an allow-listed host.
 - **Clickjacking**: GitHub Pages cannot send `frame-ancestors`, so the page hides itself when loaded inside a foreign iframe. `_headers` sends the full header set on hosts that support it.
 - **Regression tests** enforce all of the above on every push, alongside gitleaks (full history) and Semgrep in CI.
-- Only the public files are deployed; tests, scripts and docs never reach the live site.
+- Only the public files are deployed (to the `gh-pages` branch, after the tests pass); tests, scripts, docs and `serve.py` never reach the live site.
 
 Details and results are in [SECURITY_REPORT.md](SECURITY_REPORT.md).
 

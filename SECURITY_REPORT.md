@@ -38,7 +38,8 @@ The site is static: no server code, no accounts, no forms, no database, no secre
 - [x] No network calls (`fetch`, XHR, WebSocket, beacons); enforced by CSP `connect-src 'none'` and by tests.
 - [x] No third-party scripts or CDNs; fonts are self-hosted woff2 files from `@fontsource` (OFL).
 - [x] No new dependencies (no `package-lock.json`, no install scripts).
-- [x] CI: `permissions: contents: read` by default, actions pinned by SHA, no `pull_request_target`; Pages write permission only in the deploy job.
+- [x] CI: `permissions: contents: read` by default, actions pinned by SHA, no `pull_request_target`; `contents: write` only in the deploy job, which pushes fast-forward commits to `gh-pages` after the tests pass (no force push).
+- [x] Live site checked: only `index.html`, `styles.css`, `main.js`, `robots.txt`, `.nojekyll` and `fonts/` are published; the CSP blocks network requests on the live page.
 - [x] No logs, binaries or minified files of unclear origin.
 - [x] `.gitignore` covers `.env*`, `secrets/`, keys and build output.
 
