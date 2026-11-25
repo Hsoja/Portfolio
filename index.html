@@ -15,13 +15,13 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <!-- Las cabeceras que no se pueden fijar con <meta> (frame-ancestors, nosniff, HSTS…) están en _headers. -->
 
-  <title>Hsoja — Software seguro, diseñado con intención</title>
-  <meta name="description" content="Portfolio de Hsoja: productos web seguros de punta a punta. IA conversacional, plataformas inmobiliarias y portales de mercado en tiempo real.">
-  <meta name="theme-color" content="#0a0b09">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0b09'/%3E%3Cpath d='M18 50V30a14 14 0 0 1 28 0v20' fill='none' stroke='%23c8f26d' stroke-width='4'/%3E%3C/svg%3E">
+  <title>Hsoja · Katherine González — Software seguro, diseñado con intención</title>
+  <meta name="description" content="Portafolio de Katherine González (Hsoja): estudiante de Ingeniería de Software que construye aplicaciones web y herramientas con IA, con la seguridad como cimiento. Busca una pasantía.">
+  <meta name="theme-color" content="#FFFDF8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='3%200%2023%2015'%20shape-rendering='crispEdges'%3E%3Cpath%20fill='%233b2a20'%20d='M12%200h5v1h-5zM10%201h2v1h-2zM17%201h2v1h-2zM8%202h2v1h-2zM19%202h2v1h-2zM6%203h2v1h-2zM21%203h2v1h-2zM5%204h1v1h-1zM23%204h1v1h-1zM5%205h1v1h-1zM23%205h1v1h-1zM4%206h1v1h-1zM24%206h1v1h-1zM4%207h1v1h-1zM24%207h1v1h-1zM5%208h1v1h-1zM23%208h1v1h-1zM5%209h1v1h-1zM23%209h1v1h-1zM6%2010h2v1h-2zM21%2010h2v1h-2zM7%2011h1v1h-1zM21%2011h1v1h-1zM7%2012h1v1h-1zM21%2012h1v1h-1zM25%2012h1v1h-1zM7%2013h1v1h-1zM21%2013h1v1h-1zM24%2013h1v1h-1zM7%2014h1v1h-1zM20%2014h1v1h-1zM24%2014h1v1h-1z'/%3E%3Cpath%20fill='%23fffdf8'%20d='M12%201h5v1h-5zM10%202h9v1h-9zM8%203h13v1h-13zM6%204h17v1h-17zM6%205h17v1h-17zM5%206h19v1h-19zM5%207h19v1h-19zM6%208h17v1h-17zM6%209h17v1h-17zM8%2010h13v1h-13zM8%2011h13v1h-13z'/%3E%3Cpath%20fill='%23ffd84d'%20d='M25%205h1v1h-1zM24%2010h1v1h-1z'/%3E%3Cpath%20fill='%23e6dccb'%20d='M8%2012h5v1h-5zM15%2012h6v1h-6zM8%2013h2v1h-2zM18%2013h3v1h-3z'/%3E%3Cpath%20fill='%23ff8a3d'%20d='M13%2012h2v1h-2zM10%2013h8v1h-8zM8%2014h2v1h-2zM12%2014h8v1h-8z'/%3E%3Cpath%20fill='%234a4550'%20d='M25%2013h1v1h-1zM25%2014h1v1h-1z'/%3E%3Cpath%20fill='%23ffb27a'%20d='M10%2014h2v1h-2z'/%3E%3C/svg%3E">
 
   <!-- Precarga de las fuentes críticas (auto-alojadas, licencia OFL) -->
-  <link rel="preload" href="fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
@@ -30,305 +30,406 @@
 <body>
   <a class="skip" href="#proyectos">Saltar al contenido</a>
 
-  <!-- ============ NAVEGACIÓN ============ -->
+  <!-- ============ 1 · NAVEGACIÓN ============ -->
   <header class="nav" data-nav>
-    <a class="nav__brand" href="#top" aria-label="Hsoja, inicio">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 27V15a8 8 0 0 1 16 0v12" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-      <span>Hsoja<em>.</em></span>
-    </a>
-    <nav aria-label="Principal">
-      <ul class="nav__links">
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a class="nav__cta" href="https://github.com/Hsoja" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
-      </ul>
-    </nav>
-    <div class="nav__progress" aria-hidden="true"><span data-progress></span></div>
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Hsoja, inicio">
+        <svg class="nav__mark" viewBox="3 0 23 15" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path class="px-k" d="M12 0h5v1h-5zM10 1h2v1h-2zM17 1h2v1h-2zM8 2h2v1h-2zM19 2h2v1h-2zM6 3h2v1h-2zM21 3h2v1h-2zM5 4h1v1h-1zM23 4h1v1h-1zM5 5h1v1h-1zM23 5h1v1h-1zM4 6h1v1h-1zM24 6h1v1h-1zM4 7h1v1h-1zM24 7h1v1h-1zM5 8h1v1h-1zM23 8h1v1h-1zM5 9h1v1h-1zM23 9h1v1h-1zM6 10h2v1h-2zM21 10h2v1h-2zM7 11h1v1h-1zM21 11h1v1h-1zM7 12h1v1h-1zM21 12h1v1h-1zM25 12h1v1h-1zM7 13h1v1h-1zM21 13h1v1h-1zM24 13h1v1h-1zM7 14h1v1h-1zM20 14h1v1h-1zM24 14h1v1h-1z"/><path class="px-w" d="M12 1h5v1h-5zM10 2h9v1h-9zM8 3h13v1h-13zM6 4h17v1h-17zM6 5h17v1h-17zM5 6h19v1h-19zM5 7h19v1h-19zM6 8h17v1h-17zM6 9h17v1h-17zM8 10h13v1h-13zM8 11h13v1h-13z"/><path class="px-y" d="M25 5h1v1h-1zM24 10h1v1h-1z"/><path class="px-g" d="M8 12h5v1h-5zM15 12h6v1h-6zM8 13h2v1h-2zM18 13h3v1h-3z"/><path class="px-o" d="M13 12h2v1h-2zM10 13h8v1h-8zM8 14h2v1h-2zM12 14h8v1h-8z"/><path class="px-p" d="M25 13h1v1h-1zM25 14h1v1h-1z"/><path class="px-l" d="M10 14h2v1h-2z"/></svg>
+        <span>Hsoja</span><span class="nav__spark" aria-hidden="true">✦</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <ul>
+          <li><a href="#proyectos" data-nav-link>Proyectos</a></li>
+          <li><a href="#sobre-mi" data-nav-link>Sobre mí</a></li>
+          <li><a href="#stack" data-nav-link>Stack</a></li>
+          <li><a href="#contacto" data-nav-link>Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="pill-link" href="https://github.com/Hsoja" target="_blank" rel="noopener noreferrer">Ver GitHub <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+    </div>
   </header>
 
-  <main>
-    <!-- ============ HERO: recorrido 3D a través de arcos (scroll storytelling) ============ -->
-    <section class="hero" id="top" data-hero aria-labelledby="hero-title">
-      <div class="hero__sticky">
+  <main id="contenido">
 
-        <!-- Escena 3D: arcos mediterráneos que la cámara atraviesa al hacer scroll -->
-        <div class="hero__viewport" aria-hidden="true">
-          <div class="scene" data-scene>
-            <div class="floor"></div>
-            <div class="arch"></div>
-            <div class="arch"></div>
-            <div class="arch"></div>
-            <div class="arch"></div>
-            <div class="arch"></div>
-            <div class="arch"></div>
-            <div class="arch"></div>
-            <div class="arch arch--portal"><span class="portal-light"></span></div>
-            <!-- Motas de luz suspendidas a distintas profundidades -->
-            <span class="mote"></span><span class="mote"></span><span class="mote"></span>
-            <span class="mote"></span><span class="mote"></span><span class="mote"></span>
-          </div>
-        </div>
+    <!-- ============ 2 · HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--peach" data-depth="8"></span>
+        <span class="blob blob--sky" data-depth="14"></span>
+        <span class="blob blob--mint" data-depth="10"></span>
+      </div>
 
-        <!-- Capítulo 1: presentación -->
-        <div class="hero__copy hero__copy--intro">
-          <p class="eyebrow" data-depth="6"><span class="dot"></span> Ingeniería full-stack · Seguridad por diseño</p>
-          <h1 id="hero-title" class="hero__title" data-depth="14">
-            <span class="hero__name">Hsoja</span>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="px-dot" aria-hidden="true"></span>Ingeniería de Software · Busco pasantía</p>
+          <h1 id="hero-title" class="hero__title">
+            <span class="hero__hello">Hola, soy Katherine <span aria-hidden="true">👋</span></span>
+            <span class="hero__tag">Software seguro, <em>diseñado con intención.</em></span>
           </h1>
-          <p class="hero__lead" data-depth="22">
-            Software seguro,<br><em>diseñado con intención.</em>
+          <p class="hero__lead">
+            Desarrollo aplicaciones web y herramientas con IA, priorizando la seguridad y aprendiendo mediante
+            la entrega de proyectos reales: desde APIs de Python hasta interfaces modernas de TypeScript.
           </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+            <span class="btn-split">
+              <a href="https://github.com/Hsoja" target="_blank" rel="noopener noreferrer">GitHub<span class="sr"> (se abre en una pestaña nueva)</span></a>
+              <span class="btn-split__bar" aria-hidden="true">/</span>
+              <a href="https://www.linkedin.com/in/katherine-gonz%C3%A1lez-455538314" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr"> (se abre en una pestaña nueva)</span></a>
+            </span>
+          </div>
+
+          <dl class="stats">
+            <div class="stat"><dt>proyectos</dt><dd>4</dd></div>
+            <div class="stat"><dt>pruebas</dt><dd>104+</dd></div>
+            <div class="stat"><dt>claves expuestas</dt><dd>0</dd></div>
+            <div class="stat"><dt>reportes de seguridad</dt><dd>3</dd></div>
+          </dl>
         </div>
 
-        <!-- Capítulo 2: aparece a mitad del recorrido -->
-        <div class="hero__copy hero__copy--chapter" aria-hidden="true">
-          <p class="eyebrow">Tres obras. Un mismo estándar.</p>
-          <p class="hero__chapter">Cimientos sólidos.<br><em>Espacios que se disfrutan.</em></p>
-        </div>
-
-        <div class="hero__cue" aria-hidden="true">
-          <span>Desliza para entrar</span>
-          <i></i>
+        <div class="hero__art" aria-hidden="true">
+          <div class="plate" data-depth="6"></div>
+          <div class="avatar" data-avatar data-depth="12">
+            <svg viewBox="0 0 36 30" focusable="false" shape-rendering="crispEdges">
+              <ellipse class="avatar__shadow" cx="14" cy="29.2" rx="9" ry="0.9"/>
+              <g class="avatar__body"><path class="px-k" d="M12 0h5v1h-5zM10 1h2v1h-2zM17 1h2v1h-2zM8 2h2v1h-2zM19 2h2v1h-2zM6 3h2v1h-2zM21 3h2v1h-2zM5 4h1v1h-1zM23 4h1v1h-1zM5 5h1v1h-1zM23 5h1v1h-1zM4 6h1v1h-1zM4 7h1v1h-1zM5 8h1v1h-1zM23 8h1v1h-1zM5 9h1v1h-1zM23 9h1v1h-1zM6 10h2v1h-2zM21 10h2v1h-2zM7 11h1v1h-1zM21 11h1v1h-1zM7 12h1v1h-1zM21 12h1v1h-1zM7 13h1v1h-1zM21 13h1v1h-1zM7 14h1v1h-1zM20 14h1v1h-1zM6 15h1v1h-1zM21 15h1v1h-1zM6 16h1v1h-1zM21 16h1v1h-1zM5 17h1v1h-1zM11 17h1v1h-1zM18 17h1v1h-1zM22 17h1v1h-1zM5 18h1v1h-1zM10 18h2v1h-2zM17 18h2v1h-2zM22 18h2v1h-2zM5 19h1v1h-1zM10 19h2v1h-2zM17 19h2v1h-2zM22 19h1v1h-1zM5 20h1v1h-1zM22 20h1v1h-1zM4 21h1v1h-1zM12 21h1v1h-1zM16 21h1v1h-1zM4 22h1v1h-1zM13 22h3v1h-3zM24 22h1v1h-1zM5 23h2v1h-2zM21 23h3v1h-3zM6 24h1v1h-1zM21 24h1v1h-1zM7 25h1v1h-1zM20 25h1v1h-1zM8 26h2v1h-2zM18 26h2v1h-2zM9 27h1v1h-1zM15 27h1v1h-1zM19 27h1v1h-1zM9 28h1v1h-1zM13 28h3v1h-3zM19 28h1v1h-1zM10 29h3v1h-3zM16 29h3v1h-3z"/><path class="px-w" d="M12 1h5v1h-5zM10 2h9v1h-9zM8 3h13v1h-13zM6 4h17v1h-17zM6 5h17v1h-17zM5 6h19v1h-19zM5 7h19v1h-19zM6 8h17v1h-17zM6 9h17v1h-17zM8 10h13v1h-13zM8 11h13v1h-13zM10 17h1v1h-1zM17 17h1v1h-1z"/><path class="px-g" d="M8 12h5v1h-5zM15 12h6v1h-6zM8 13h2v1h-2zM18 13h3v1h-3z"/><path class="px-o" d="M13 12h2v1h-2zM10 13h8v1h-8zM8 14h2v1h-2zM12 14h8v1h-8zM7 15h1v1h-1zM10 15h11v1h-11zM7 16h1v1h-1zM9 16h12v1h-12zM6 17h4v1h-4zM12 17h5v1h-5zM19 17h3v1h-3zM6 18h4v1h-4zM12 18h5v1h-5zM19 18h3v1h-3zM6 19h4v1h-4zM12 19h5v1h-5zM19 19h3v1h-3zM6 20h2v1h-2zM10 20h9v1h-9zM7 21h5v1h-5zM13 21h3v1h-3zM17 21h2v1h-2zM7 22h6v1h-6zM16 22h3v1h-3zM7 23h12v1h-12zM7 24h12v1h-12z"/><path class="px-l" d="M10 14h2v1h-2zM8 15h2v1h-2zM8 16h1v1h-1z"/><path class="px-h" d="M23 19h1v1h-1zM23 20h1v1h-1zM23 21h1v1h-1z"/><path class="px-c" d="M8 20h2v1h-2zM19 20h2v1h-2z"/><path class="px-d" d="M21 20h1v1h-1zM5 21h2v1h-2zM19 21h4v1h-4zM5 22h2v1h-2zM19 22h5v1h-5zM19 23h2v1h-2zM19 24h2v1h-2zM8 25h12v1h-12zM10 26h8v1h-8zM10 27h5v1h-5zM16 27h3v1h-3zM10 28h3v1h-3zM16 28h3v1h-3z"/></g>
+              <g class="avatar__pan"><path class="px-y" d="M33 3h1v1h-1zM25 5h1v1h-1zM29 7h1v1h-1zM29 8h1v1h-1zM24 10h1v1h-1z"/><path class="px-k" d="M28 5h3v1h-3zM24 6h1v1h-1zM27 6h1v1h-1zM31 6h1v1h-1zM24 7h1v1h-1zM26 7h1v1h-1zM32 7h1v1h-1zM26 8h1v1h-1zM32 8h1v1h-1zM27 9h1v1h-1zM31 9h1v1h-1zM28 10h3v1h-3zM26 11h7v1h-7zM25 12h1v1h-1zM33 12h1v1h-1zM24 13h1v1h-1zM34 13h1v1h-1zM24 14h1v1h-1zM34 14h1v1h-1zM24 15h1v1h-1zM34 15h1v1h-1zM25 16h1v1h-1zM33 16h1v1h-1zM24 17h1v1h-1zM29 17h4v1h-4zM28 18h1v1h-1zM27 19h1v1h-1zM26 20h1v1h-1zM25 21h1v1h-1z"/><path class="px-w" d="M28 6h3v1h-3zM27 7h2v1h-2zM30 7h2v1h-2zM27 8h2v1h-2zM30 8h2v1h-2zM28 9h3v1h-3z"/><path class="px-p" d="M26 12h1v1h-1zM32 12h1v1h-1zM25 13h1v1h-1zM33 13h1v1h-1zM25 14h1v1h-1zM33 14h1v1h-1zM25 15h4v1h-4zM30 15h4v1h-4zM26 16h7v1h-7z"/><path class="px-q" d="M27 12h5v1h-5zM26 13h7v1h-7zM26 14h7v1h-7zM29 15h1v1h-1z"/><path class="px-h" d="M25 17h4v1h-4zM24 18h4v1h-4zM24 19h3v1h-3zM24 20h2v1h-2zM24 21h1v1h-1z"/></g>
+            </svg>
+          </div>
+          <span class="float float--a" data-depth="20">Python</span>
+          <span class="float float--b" data-depth="26">FastAPI</span>
+          <span class="float float--c" data-depth="18">TypeScript</span>
+          <span class="float float--d" data-depth="24">Argon2id</span>
+          <span class="stamp stamp--hero" data-depth="16"><b>probado</b><i>✓</i></span>
         </div>
       </div>
     </section>
 
-    <!-- ============ CINTA DE TECNOLOGÍAS ============ -->
-    <div class="marquee" aria-label="Tecnologías">
-      <div class="marquee__track">
-        <ul>
-          <li>Python</li><li>FastAPI</li><li>Flask</li><li>React</li><li>TypeScript</li>
-          <li>Astro</li><li>Tailwind</li><li>SQLite</li><li>LLM · Groq</li><li>Argon2id</li><li>GitHub Actions</li>
-        </ul>
-        <ul aria-hidden="true">
-          <li>Python</li><li>FastAPI</li><li>Flask</li><li>React</li><li>TypeScript</li>
-          <li>Astro</li><li>Tailwind</li><li>SQLite</li><li>LLM · Groq</li><li>Argon2id</li><li>GitHub Actions</li>
-        </ul>
+    <!-- ============ 3 · PROYECTOS DESTACADOS ============ -->
+    <section class="section projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="label" data-reveal><span class="px-dot" aria-hidden="true"></span>Proyectos destacados</p>
+          <h2 id="projects-title" class="h2" data-reveal data-delay="1">Cuatro recetas, <em>probadas de punta a punta.</em></h2>
+          <p class="section__intro" data-reveal data-delay="2">Cada proyecto es un caso de estudio: el problema, lo que construí, cómo lo protegí y qué lo respalda.</p>
+        </header>
+
+        <!-- 01 · Operativa.ia -->
+        <article class="case case--peach" aria-labelledby="p1-title">
+          <div class="case__top" data-reveal>
+            <span class="case__num" aria-hidden="true">01</span>
+            <div>
+              <h3 id="p1-title" class="case__name">Operativa<em>.ia</em></h3>
+              <p class="case__sub">Plataforma de operaciones con IA multiusuario para pequeñas empresas de servicios.</p>
+            </div>
+            <span class="status status--wip"><span class="px-dot" aria-hidden="true"></span>En desarrollo</span>
+          </div>
+
+          <div class="case__grid">
+            <ol class="steps" data-reveal data-delay="1">
+              <li><h4>Problema</h4><p>Una pequeña empresa de servicios no puede contestar a todas horas ni repetir a mano cada paso: captar al cliente, comprobar si llega a su zona, reservar, cobrar un depósito y volver a contactarlo.</p></li>
+              <li><h4>Qué construí</h4><p>Una plataforma multiusuario con IA: captura de leads 24/7 por web y WhatsApp, comprobación de cobertura, reservas con depósito y reactivación de clientes conforme a CASL.</p></li>
+              <li><h4>Cómo lo hice seguro</h4><p>Contraseñas con Argon2, rate limiting, CORS estricto y HTTPS con Caddy.</p></li>
+              <li><h4>Resultado y pruebas</h4><p>Sigue en construcción: cada paso nuevo pasa por pruebas y comprobaciones de seguridad antes de publicarse.</p></li>
+            </ol>
+
+            <div class="case__side" data-reveal data-delay="2">
+              <div class="mock mock--chat card" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Asistente · web y WhatsApp</span></div>
+                <div class="mock__body">
+                  <p class="bubble bubble--in">Hola, ¿tienen disponibilidad esta semana?</p>
+                  <p class="bubble bubble--out">¡Claro! ¿Qué día te acomoda?</p>
+                  <p class="bubble bubble--in">Mañana por la tarde.</p>
+                  <ul class="mock__chips">
+                    <li>Lead capturado</li><li>Cobertura ✓</li><li>Reserva + depósito</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="ingredients" aria-label="Stack de Operativa.ia">
+                <li>Python</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>Streamlit</li>
+              </ul>
+              <p class="case__guard"><span class="px-dot" aria-hidden="true"></span>Argon2 · Rate limiting · CORS estricto · Caddy HTTPS</p>
+              <div class="case__links">
+                <a class="btn btn--tint" href="https://github.com/Hsoja/Operativa.ia" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 · Gloz -->
+        <article class="case case--sky case--flip" aria-labelledby="p2-title">
+          <div class="case__top" data-reveal>
+            <span class="case__num" aria-hidden="true">02</span>
+            <div>
+              <h3 id="p2-title" class="case__name">Gloz</h3>
+              <p class="case__sub">App web segura para buscar propiedades.</p>
+            </div>
+            <ul class="stamps" aria-label="Sellos">
+              <li class="stamp stamp--sm"><b>probado</b></li>
+              <li class="stamp stamp--sm"><b>escaneado</b></li>
+            </ul>
+          </div>
+
+          <div class="case__grid">
+            <ol class="steps" data-reveal data-delay="1">
+              <li><h4>Problema</h4><p>Buscar casa suele significar abrir muchas pestañas y comparar a ojo. Y una app con cuentas y favoritos guarda datos de personas que merecen protección.</p></li>
+              <li><h4>Qué construí</h4><p>Una app web donde se buscan casas, se crea una cuenta y se guardan favoritos para compararlos lado a lado.</p></li>
+              <li><h4>Cómo lo hice seguro</h4><p>Argon2id, sesiones en servidor, protección CSRF y una CSP estricta.</p></li>
+              <li><h4>Resultado y pruebas</h4><p>64 pruebas con pytest, análisis con Bandit y Semgrep, y accesibilidad WCAG 2.1 AA.</p></li>
+            </ol>
+
+            <div class="case__side" data-reveal data-delay="2">
+              <div class="mock mock--home card" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Favoritos · comparar</span></div>
+                <div class="mock__body">
+                  <div class="compare">
+                    <div class="listing">
+                      <svg viewBox="0 0 120 70" focusable="false"><rect class="l-sky" width="120" height="70"/><path class="l-hill" d="M0 70V52q30-14 62-4t58-6v28z"/><path class="l-house" d="M24 58V32h38v26zM62 58V22h34v36z"/><path class="l-roof" d="M20 33l23-14 23 14zM58 23l21-13 21 13z"/><rect class="l-win" x="70" y="30" width="18" height="12"/><rect class="l-door" x="36" y="42" width="10" height="16"/></svg>
+                      <span class="listing__heart">♥</span>
+                      <i class="sk sk--w70"></i><i class="sk sk--w50"></i>
+                    </div>
+                    <div class="listing">
+                      <svg viewBox="0 0 120 70" focusable="false"><rect class="l-sky" width="120" height="70"/><path class="l-hill" d="M0 70V56q40-18 76-6t44-4v24z"/><path class="l-house" d="M30 60V28h60v32z"/><path class="l-roof" d="M24 29l36-19 36 19z"/><rect class="l-win" x="38" y="36" width="16" height="12"/><rect class="l-win" x="66" y="36" width="16" height="12"/><rect class="l-door" x="54" y="46" width="12" height="14"/></svg>
+                      <span class="listing__heart">♥</span>
+                      <i class="sk sk--w60"></i><i class="sk sk--w40"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="ingredients" aria-label="Stack de Gloz">
+                <li>Python 3.13</li><li>Flask 3</li><li>Jinja2</li><li>SQLite</li><li>JS vanilla</li><li>Gunicorn</li>
+              </ul>
+              <p class="case__guard"><span class="px-dot" aria-hidden="true"></span>Argon2id · Sesiones en servidor · CSRF · CSP estricta</p>
+              <div class="case__links">
+                <a class="btn btn--tint" href="https://github.com/Hsoja/Gloz" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 · TradePro -->
+        <article class="case case--lilac" aria-labelledby="p3-title">
+          <div class="case__top" data-reveal>
+            <span class="case__num" aria-hidden="true">03</span>
+            <div>
+              <h3 id="p3-title" class="case__name">Trade<em>Pro</em></h3>
+              <p class="case__sub">Portal de noticias y cotizaciones en vivo.</p>
+            </div>
+            <ul class="stamps" aria-label="Sellos">
+              <li class="stamp stamp--sm"><b>probado</b></li>
+              <li class="stamp stamp--sm"><b>escaneado</b></li>
+            </ul>
+          </div>
+
+          <div class="case__grid">
+            <ol class="steps" data-reveal data-delay="1">
+              <li><h4>Problema</h4><p>Seguir los mercados suele significar saltar entre muchos sitios, y los widgets de terceros pueden traer claves, cookies y rastreadores.</p></li>
+              <li><h4>Qué construí</h4><p>Acciones, cripto, futuros, materias primas y divisas en un solo lugar: gráficos, heatmaps, calendario económico y horario de bolsas. Todo estático.</p></li>
+              <li><h4>Cómo lo hice seguro</h4><p>Sin claves de API, sin cookies ni analítica, y con los widgets aislados en iframes con sandbox.</p></li>
+              <li><h4>Resultado y pruebas</h4><p>40 pruebas con Vitest y un escáner que revisa el sitio después de cada build.</p></li>
+            </ol>
+
+            <div class="case__side" data-reveal data-delay="2">
+              <div class="mock mock--market card" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Mercados</span></div>
+                <div class="mock__body">
+                  <ul class="tabs"><li class="is-on">Acciones</li><li>Cripto</li><li>Futuros</li><li>Divisas</li></ul>
+                  <svg class="chart" viewBox="0 0 300 110" preserveAspectRatio="none" focusable="false">
+                    <path class="chart__grid" d="M0 28H300M0 55H300M0 82H300"/>
+                    <path class="chart__area" d="M0 86L25 78L50 82L75 66L100 70L125 52L150 58L175 40L200 46L225 30L250 36L275 20L300 14V110H0Z"/>
+                    <path class="chart__line" d="M0 86L25 78L50 82L75 66L100 70L125 52L150 58L175 40L200 46L225 30L250 36L275 20L300 14"/>
+                  </svg>
+                  <div class="heat">
+                    <i class="h-up2"></i><i class="h-up1"></i><i class="h-dn1"></i><i class="h-up1"></i><i class="h-up2"></i><i class="h-dn2"></i>
+                    <i class="h-dn1"></i><i class="h-up1"></i><i class="h-up2"></i><i class="h-dn1"></i><i class="h-up1"></i><i class="h-up2"></i>
+                  </div>
+                </div>
+              </div>
+              <ul class="ingredients" aria-label="Stack de TradePro">
+                <li>Astro 7</li><li>TypeScript</li><li>Canvas 2D</li><li>TradingView</li><li>GitHub Pages</li>
+              </ul>
+              <p class="case__guard"><span class="px-dot" aria-hidden="true"></span>Iframes sandbox · Sin cookies ni analítica · Sin claves de API</p>
+              <div class="case__links">
+                <a class="btn btn--tint" href="https://hsoja.github.io/TradePro/" target="_blank" rel="noopener noreferrer">Sitio en vivo <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+                <a class="btn btn--ghost" href="https://github.com/Hsoja/TradePro" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 · Quant-lab -->
+        <article class="case case--mint case--flip" aria-labelledby="p4-title">
+          <div class="case__top" data-reveal>
+            <span class="case__num" aria-hidden="true">04</span>
+            <div>
+              <h3 id="p4-title" class="case__name">Quant<em>-lab</em></h3>
+              <p class="case__sub">Hechos verificados por un lado, escenarios simulados por otro.</p>
+            </div>
+            <ul class="stamps" aria-label="Sellos">
+              <li class="stamp stamp--sm"><b>con cita</b></li>
+            </ul>
+          </div>
+
+          <div class="case__grid">
+            <ol class="steps" data-reveal data-delay="1">
+              <li><h4>Problema</h4><p>Es fácil mezclar lo que dice un informe oficial con lo que solo es una proyección, y terminar decidiendo por intuición.</p></li>
+              <li><h4>Qué construí</h4><p>Una herramienta que separa lo realmente verificado en informes oficiales, con cita exacta, de lo que es solo un escenario simulado de Monte Carlo. Así se decide con hechos y probabilidades.</p></li>
+              <li><h4>Cómo lo hice seguro</h4><p>Los datos salen de fuentes oficiales (SEC EDGAR, XBRL) y lo simulado nunca se presenta como verificado: cada cosa lleva su etiqueta.</p></li>
+              <li><h4>Resultado y pruebas</h4><p>Cada cifra verificada se puede rastrear hasta su cita; el escenario de Monte Carlo se muestra aparte, como probabilidad.</p></li>
+            </ol>
+
+            <div class="case__side" data-reveal data-delay="2">
+              <div class="mock mock--quant card" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Verificado vs. simulado</span></div>
+                <div class="mock__body">
+                  <div class="split">
+                    <div class="split__col split__col--ok">
+                      <span class="tag tag--ok">✓ Verificado</span>
+                      <i class="sk sk--w90"></i><i class="sk sk--w70"></i>
+                      <span class="cite">Cita: informe oficial · sección · frase exacta</span>
+                    </div>
+                    <div class="split__col split__col--sim">
+                      <span class="tag tag--sim">≈ Simulado</span>
+                      <div class="hist"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <span class="cite cite--sim">Monte Carlo · NumPy</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="ingredients" aria-label="Stack de Quant-lab">
+                <li>Python</li><li>TypeScript</li><li>GitHub Pages</li><li>SEC EDGAR</li><li>XBRL</li><li>Monte Carlo</li><li>NumPy</li>
+              </ul>
+              <p class="case__guard"><span class="px-dot" aria-hidden="true"></span>Fuentes oficiales · Cita exacta · Simulación etiquetada</p>
+              <div class="case__links">
+                <span class="btn btn--off">Enlaces próximamente</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="note" data-reveal aria-label="Calidad de cada proyecto">
+          <ul class="stamps stamps--row" aria-hidden="true">
+            <li class="stamp"><b>probado</b><i>✓</i></li>
+            <li class="stamp"><b>escaneado</b><i>✓</i></li>
+            <li class="stamp"><b>documentado</b><i>✓</i></li>
+          </ul>
+          <p>Cada proyecto incluye pruebas, comprobaciones de seguridad automatizadas y un informe de seguridad.</p>
+        </aside>
       </div>
-    </div>
-
-    <!-- ============ PROYECTOS ============ -->
-    <section class="projects" id="proyectos" aria-labelledby="projects-title">
-      <header class="section-head">
-        <p class="label" data-reveal><span>01</span> Obra seleccionada</p>
-        <h2 id="projects-title" class="section-title" data-reveal data-delay="1">
-          Proyectos que <em>se sostienen</em><br>por dentro y por fuera.
-        </h2>
-        <p class="section-intro" data-reveal data-delay="2">
-          Tres repositorios públicos, construidos de punta a punta: producto, interfaz, pruebas y seguridad.
-        </p>
-      </header>
-
-      <!-- Proyecto 01 · Operativa.ia -->
-      <article class="project" data-project>
-        <span class="project__ghost" data-ghost aria-hidden="true">01</span>
-        <div class="project__info">
-          <p class="project__index" data-reveal>01 / IA conversacional</p>
-          <h3 class="project__name" data-reveal data-delay="1">Operativa<em>.ia</em></h3>
-          <p class="project__desc" data-reveal data-delay="2">
-            Atención al cliente, agenda y seguimiento 24/7 para pequeños negocios de servicios.
-            Su asistente, <strong>Sofía</strong>, responde con la información real del negocio, agenda citas
-            con sincronización opcional a Google Calendar y alimenta un panel de administración de leads y reservas.
-          </p>
-          <ul class="chips" data-reveal data-delay="3" aria-label="Tecnologías">
-            <li>FastAPI</li><li>React 18</li><li>TypeScript</li><li>Groq LLM</li><li>Tailwind</li><li>Streamlit</li>
-          </ul>
-          <p class="project__meta" data-reveal data-delay="3">Argon2 · Rate limiting · CORS estricto · Caddy HTTPS</p>
-          <div class="btn-row" data-reveal data-delay="4">
-            <a class="btn" data-magnetic href="https://github.com/Hsoja/Operativa.ia" target="_blank" rel="noopener noreferrer">
-              <span>Ver repositorio</span><span class="btn__arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="project__stage" data-reveal data-delay="1" aria-hidden="true">
-          <div class="device" data-tilt>
-            <!-- Capa trasera: panel de chat -->
-            <div class="layer layer--back panel">
-              <div class="panel__bar"><i></i><i></i><i></i><span>Sofía · Clínica dental</span></div>
-              <div class="chat">
-                <p class="bubble bubble--in">Hola, ¿tienen hueco para una limpieza esta semana?</p>
-                <p class="bubble bubble--out">¡Claro! Tengo jueves a las 10:30 o viernes a las 16:00. ¿Cuál prefieres?</p>
-                <p class="bubble bubble--in">Jueves, perfecto.</p>
-                <p class="bubble bubble--typing"><i></i><i></i><i></i></p>
-              </div>
-            </div>
-            <!-- Capa media: tarjeta de cita -->
-            <div class="layer layer--mid card card--event">
-              <span class="card__kicker">Cita confirmada</span>
-              <strong>Jue 10:30</strong>
-              <span class="card__sub">Limpieza dental · Google Calendar</span>
-            </div>
-            <!-- Capa frontal: estado -->
-            <div class="layer layer--front pill"><span class="dot"></span> En línea 24/7</div>
-          </div>
-          <div class="stage__floor"></div>
-        </div>
-      </article>
-
-      <!-- Proyecto 02 · Gloz -->
-      <article class="project project--flip" data-project>
-        <span class="project__ghost" data-ghost aria-hidden="true">02</span>
-        <div class="project__info">
-          <p class="project__index" data-reveal>02 / Plataforma inmobiliaria</p>
-          <h3 class="project__name" data-reveal data-delay="1">Gloz</h3>
-          <p class="project__desc" data-reveal data-delay="2">
-            Portal de viviendas en venta y alquiler en varias ciudades. Filtros en servidor
-            con URLs compartibles, cuentas de usuario y lista de favoritos comparables lado a lado.
-            Seguridad desde el primer commit: Argon2id, sesiones en servidor, CSRF y CSP estricta.
-          </p>
-          <ul class="chips" data-reveal data-delay="3" aria-label="Tecnologías">
-            <li>Python 3.13</li><li>Flask 3</li><li>Jinja2</li><li>SQLite</li><li>JS vanilla</li><li>Gunicorn</li>
-          </ul>
-          <p class="project__meta" data-reveal data-delay="3">64 pruebas pytest · Bandit · Semgrep · WCAG 2.1 AA</p>
-          <div class="btn-row" data-reveal data-delay="4">
-            <a class="btn" data-magnetic href="https://github.com/Hsoja/Gloz" target="_blank" rel="noopener noreferrer">
-              <span>Ver repositorio</span><span class="btn__arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="project__stage" data-reveal data-delay="1" aria-hidden="true">
-          <div class="device" data-tilt>
-            <!-- Capa trasera: plano arquitectónico -->
-            <div class="layer layer--back panel panel--plan">
-              <svg viewBox="0 0 400 300" class="plan">
-                <rect x="20" y="20" width="360" height="260" />
-                <line x1="200" y1="20" x2="200" y2="170" />
-                <line x1="20" y1="170" x2="150" y2="170" />
-                <line x1="250" y1="170" x2="380" y2="170" />
-                <line x1="290" y1="170" x2="290" y2="280" />
-                <path d="M150 170 A50 50 0 0 1 200 120" />
-                <path d="M250 170 A40 40 0 0 0 290 210" />
-                <text x="70" y="100">Sala</text><text x="255" y="100">Cocina</text>
-                <text x="105" y="235">Recámara</text><text x="305" y="235">Baño</text>
-              </svg>
-            </div>
-            <!-- Capa media: ficha de propiedad -->
-            <div class="layer layer--mid card card--home">
-              <div class="home__img">
-                <svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMax slice">
-                  <path class="home__hill" d="M0 110 L0 80 Q60 60 120 78 T200 70 L200 110Z" />
-                  <path class="home__house" d="M40 92 V52 H110 V92Z M110 92 V38 H170 V92Z" />
-                  <path class="home__arch" d="M58 92 V72 a10 10 0 0 1 20 0 V92" />
-                  <rect class="home__win" x="122" y="50" width="36" height="18" />
-                </svg>
-              </div>
-              <div class="home__body">
-                <span class="card__kicker">Loft · Centro</span>
-                <strong>$2,450 <small>/ mes</small></strong>
-                <span class="card__sub">2 rec · 1 baño · 84 m²</span>
-              </div>
-            </div>
-            <!-- Capa frontal: guardado -->
-            <div class="layer layer--front pill"><span class="heart">♥</span> Guardado</div>
-          </div>
-          <div class="stage__floor"></div>
-        </div>
-      </article>
-
-      <!-- Proyecto 03 · TradePro -->
-      <article class="project" data-project>
-        <span class="project__ghost" data-ghost aria-hidden="true">03</span>
-        <div class="project__info">
-          <p class="project__index" data-reveal>03 / Mercados en tiempo real</p>
-          <h3 class="project__name" data-reveal data-delay="1">Trade<em>Pro</em></h3>
-          <p class="project__desc" data-reveal data-delay="2">
-            Portal de noticias y cotizaciones en vivo: acciones, cripto, futuros, materias primas y divisas en una sola pantalla.
-            Gráficos interactivos, heatmaps, calendario económico y horario de bolsas, todo estático y sin claves de API,
-            con widgets aislados en iframes sandbox.
-          </p>
-          <ul class="chips" data-reveal data-delay="3" aria-label="Tecnologías">
-            <li>Astro 7</li><li>TypeScript</li><li>Canvas 2D</li><li>TradingView</li><li>GitHub Pages</li>
-          </ul>
-          <p class="project__meta" data-reveal data-delay="3">40 pruebas Vitest · Escáner post-build · Sin cookies ni analítica</p>
-          <div class="btn-row" data-reveal data-delay="4">
-            <a class="btn" data-magnetic href="https://github.com/Hsoja/TradePro" target="_blank" rel="noopener noreferrer">
-              <span>Ver repositorio</span><span class="btn__arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="btn btn--ghost" data-magnetic href="https://hsoja.github.io/TradePro/" target="_blank" rel="noopener noreferrer">
-              <span>Sitio en vivo</span><span class="btn__arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="project__stage" data-reveal data-delay="1" aria-hidden="true">
-          <div class="device" data-tilt>
-            <!-- Capa trasera: gráfico -->
-            <div class="layer layer--back panel panel--chart">
-              <div class="panel__bar"><i></i><i></i><i></i><span>NVDA · 1D</span></div>
-              <svg viewBox="0 0 400 220" preserveAspectRatio="none" class="chart">
-                <defs>
-                  <linearGradient id="g-area" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stop-color="#c8f26d" stop-opacity=".35"/>
-                    <stop offset="1" stop-color="#c8f26d" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <path class="chart__area" d="M0 170 L30 160 L60 166 L90 140 L120 148 L150 118 L180 126 L210 96 L240 104 L270 80 L300 88 L330 60 L360 66 L400 40 L400 220 L0 220Z" fill="url(#g-area)"/>
-                <path class="chart__line" d="M0 170 L30 160 L60 166 L90 140 L120 148 L150 118 L180 126 L210 96 L240 104 L270 80 L300 88 L330 60 L360 66 L400 40"/>
-              </svg>
-            </div>
-            <!-- Capa media: cotizaciones -->
-            <div class="layer layer--mid card card--quotes">
-              <div class="quote"><span>S&amp;P 500</span><b class="up">+0.84%</b></div>
-              <div class="quote"><span>BTC/USD</span><b class="up">+2.11%</b></div>
-              <div class="quote"><span>EUR/USD</span><b class="down">−0.12%</b></div>
-            </div>
-            <!-- Capa frontal: estado de bolsa -->
-            <div class="layer layer--front pill"><span class="dot"></span> NYSE abierta</div>
-          </div>
-          <div class="stage__floor"></div>
-        </div>
-      </article>
     </section>
 
-    <!-- ============ SOBRE MÍ ============ -->
-    <section class="about" id="sobre-mi" aria-labelledby="about-title">
-      <p class="label" data-reveal><span>02</span> Sobre mí</p>
-      <div class="about__grid">
-        <h2 id="about-title" class="section-title" data-reveal data-delay="1">
-          Construyo software como se construye <em>una casa:</em> cimientos primero.
-        </h2>
-        <div class="about__text">
-          <p data-reveal data-delay="2">
-            Desarrollo productos web de punta a punta, desde la API hasta el último píxel, con la seguridad como
-            punto de partida y no como parche. Mi trabajo abarca asistentes de IA para negocios de servicios
-            (FastAPI, React y LLMs), plataformas con autenticación robusta (Flask, Argon2id, CSRF) y portales
-            estáticos ultrarrápidos con Astro.
-          </p>
-          <p data-reveal data-delay="3">
-            En cada proyecto aplico la misma disciplina: pruebas automatizadas, Content Security Policy estricta,
-            dependencias auditadas en CI, documentación clara y diseño accesible y responsive. Lo publico todo,
-            incluido un reporte de seguridad por repositorio.
-          </p>
+    <!-- ============ 4 · SOBRE MÍ ============ -->
+    <section class="section about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div>
+          <p class="label" data-reveal><span class="px-dot" aria-hidden="true"></span>Sobre mí</p>
+          <h2 id="about-title" class="h2 h2--quote" data-reveal data-delay="1">Construyo software como se construye <em>una casa:</em> cimientos primero.</h2>
+        </div>
+        <ul class="about__list">
+          <li class="card" data-reveal data-delay="1">
+            <span class="about__icon about__icon--peach" aria-hidden="true"></span>
+            <h3>Seguro por defecto</h3>
+            <p>Probado, escaneado y documentado antes de lanzar.</p>
+          </li>
+          <li class="card" data-reveal data-delay="2">
+            <span class="about__icon about__icon--sky" aria-hidden="true"></span>
+            <h3>IA y automatización</h3>
+            <p>Para eliminar trabajo manual en pequeñas empresas.</p>
+          </li>
+          <li class="card" data-reveal data-delay="3">
+            <span class="about__icon about__icon--mint" aria-hidden="true"></span>
+            <h3>Aprendo construyendo</h3>
+            <p>Cada proyecto es un paso real, no un ejercicio de tutorial.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 5 · ACTUALMENTE APRENDIENDO ============ -->
+    <section class="section learning" id="aprendiendo" aria-labelledby="learning-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="label" data-reveal><span class="px-dot" aria-hidden="true"></span>En el horno</p>
+          <h2 id="learning-title" class="h2" data-reveal data-delay="1">Actualmente <em>aprendiendo</em></h2>
+        </header>
+        <ol class="recipe" data-reveal data-delay="2">
+          <li><span>Fundamentos de ingeniería de software en Conestoga</span></li>
+          <li><span>Prácticas seguras: auth, CSRF, CSP y análisis de dependencias</span></li>
+          <li><span>Integrar LLM de forma responsable</span></li>
+          <li><span>Bases de datos y diseño de backend</span></li>
+          <li><span>Git limpio, pruebas y documentación</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 6 · PILA TECNOLÓGICA ============ -->
+    <section class="section stack" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="label" data-reveal><span class="px-dot" aria-hidden="true"></span>Despensa</p>
+          <h2 id="stack-title" class="h2" data-reveal data-delay="1">Pila <em>tecnológica</em></h2>
+        </header>
+        <div class="stack__grid">
+          <section class="pantry pantry--peach card" data-reveal data-delay="1" aria-labelledby="st-1">
+            <h3 id="st-1">Idiomas</h3>
+            <ul class="ingredients ingredients--lg">
+              <li>Python</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+          </section>
+          <section class="pantry pantry--sky card" data-reveal data-delay="2" aria-labelledby="st-2">
+            <h3 id="st-2">Frameworks</h3>
+            <ul class="ingredients ingredients--lg">
+              <li>FastAPI</li><li>Flask</li><li>React</li><li>Astro</li><li>Vite</li><li>Tailwind</li><li>Streamlit</li>
+            </ul>
+          </section>
+          <section class="pantry pantry--mint card" data-reveal data-delay="3" aria-labelledby="st-3">
+            <h3 id="st-3">Datos, pruebas y herramientas</h3>
+            <ul class="ingredients ingredients--lg">
+              <li>SQLite</li><li>pytest</li><li>Vitest</li><li>Git</li><li>GitHub Actions</li>
+            </ul>
+          </section>
         </div>
       </div>
+    </section>
 
-      <dl class="stats">
-        <div data-reveal><dt>Repositorios públicos</dt><dd data-count="3">3</dd></div>
-        <div data-reveal data-delay="1"><dt>Pruebas automatizadas</dt><dd data-count="104" data-suffix="+">104+</dd></div>
-        <div data-reveal data-delay="2"><dt>Reportes de seguridad</dt><dd data-count="3">3</dd></div>
-        <div data-reveal data-delay="3"><dt>Claves expuestas</dt><dd>0</dd></div>
-      </dl>
+    <!-- ============ 7 · METAS ============ -->
+    <section class="section goals" id="metas" aria-labelledby="goals-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="label" data-reveal><span class="px-dot" aria-hidden="true"></span>Siguiente plato</p>
+          <h2 id="goals-title" class="h2" data-reveal data-delay="1">Metas</h2>
+        </header>
+        <ol class="goals__list">
+          <li data-reveal data-delay="1"><span aria-hidden="true">01</span><p>Conseguir una pasantía en ingeniería de software.</p></li>
+          <li data-reveal data-delay="2"><span aria-hidden="true">02</span><p>Seguir ampliando mi portafolio con proyectos bien probados y documentados.</p></li>
+          <li data-reveal data-delay="3"><span aria-hidden="true">03</span><p>Profundizar en seguridad y diseño seguro.</p></li>
+          <li data-reveal data-delay="4"><span aria-hidden="true">04</span><p>Contribuir a código abierto.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 8 · CONECTEMOS ============ -->
+    <section class="section connect" id="contacto" aria-labelledby="connect-title">
+      <div class="wrap">
+        <div class="connect__card" data-reveal>
+          <p class="label"><span class="px-dot" aria-hidden="true"></span>Contacto</p>
+          <h2 id="connect-title" class="h2">Conectemos <span class="spark" aria-hidden="true">✦</span></h2>
+          <p class="connect__text">Siempre me complace hablar sobre ingeniería de software, IA, automatización y seguridad.</p>
+          <div class="connect__btns">
+            <a class="btn btn--lg btn--primary" href="https://www.linkedin.com/in/katherine-gonz%C3%A1lez-455538314" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+            <a class="btn btn--lg btn--dark" href="https://github.com/Hsoja" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+            <a class="btn btn--lg btn--ghost" href="https://github.com/Hsoja?tab=repositories" target="_blank" rel="noopener noreferrer">Ver repositorios <span aria-hidden="true">↗</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <p class="footer__big" data-reveal>
-      ¿Construimos algo<br><em>que dure?</em>
-    </p>
-    <div class="footer__row">
-      <a class="btn" data-magnetic href="https://github.com/Hsoja" target="_blank" rel="noopener noreferrer">
-        <span>github.com/Hsoja</span><span class="btn__arrow" aria-hidden="true">↗</span>
-      </a>
-      <ul class="footer__links">
-        <li><a href="https://github.com/Hsoja/Operativa.ia" target="_blank" rel="noopener noreferrer">Operativa.ia</a></li>
-        <li><a href="https://github.com/Hsoja/Gloz" target="_blank" rel="noopener noreferrer">Gloz</a></li>
-        <li><a href="https://github.com/Hsoja/TradePro" target="_blank" rel="noopener noreferrer">TradePro</a></li>
-      </ul>
+    <div class="wrap footer__row">
+      <p>Hecho con <span aria-hidden="true">💛</span><span class="sr">cariño</span> por Hsoja · 2026</p>
+      <p class="footer__small">Sin cookies, sin rastreadores.</p>
     </div>
-    <p class="footer__legal">© <span data-year>2026</span> Hsoja · Hecho a mano con HTML, CSS y JavaScript. Sin cookies, sin rastreadores.</p>
   </footer>
 </body>
 </html>
