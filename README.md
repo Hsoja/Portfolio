@@ -1,6 +1,6 @@
 # Hsoja · Portfolio
 
-**A single-page personal portfolio with a light, warm, editorial design and a pixel-art chef as its mascot, built with plain HTML, CSS and JavaScript.**
+**A single-page personal portfolio with a clean, minimal, Apple-inspired design and a pixel-art chef as its mascot, built with plain HTML, CSS and JavaScript.**
 
 Spanish-language site for Katherine González (Hsoja), a Software Engineering student looking for an internship. It tells the story in one scroll: hero, four featured projects written as mini case studies (problem → what I built → how I made it secure → results), about, learning, stack, goals and contact. No frameworks, no build step, no third-party scripts and no network requests at runtime.
 
@@ -11,7 +11,7 @@ Spanish-language site for Katherine González (Hsoja), a Software Engineering st
 ## Features
 
 - 🍳 **Personal brand**: the pixel-art chef avatar (an inline SVG built from rectangles), "ingredient" badges for the stack and "probado / escaneado / documentado" stamps.
-- 🎨 **Light and tidy**: cream background, peach/coral accent, and one soft color per project (peach, sky, lilac, mint). Instrument Serif for headlines, Manrope for body text.
+- 🎨 **Clean and spacious**: near-white background, large type, and one soft pastel per project (peach, sky, lilac, butter) — no green. Manrope for headlines and body, Instrument Serif for small italic accents.
 - 🧩 **Case studies, not identical cards**: every project has its own color, a CSS/SVG mockup (no images) and its stack as ingredient badges.
 - 🌊 **Soft motion**: smooth scroll, fade-up reveals, 4 px card lift on hover, very subtle hero parallax, and a micro-interaction on the avatar. Only `transform` and `opacity` are animated, with one `requestAnimationFrame` loop that runs only while something moves.
 - ♿ **Accessible**: WCAG 2.1 AA contrast (checked), semantic landmarks, skip link, visible focus, and a fully static version under `prefers-reduced-motion`. 0 axe-core violations on desktop and mobile.

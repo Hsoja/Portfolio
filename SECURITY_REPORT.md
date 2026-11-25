@@ -1,7 +1,7 @@
 # Security Report
 
 **Project:** Hsoja portfolio (static single page)
-**Date:** 2026-11-24 (editorial redesign, light theme)
+**Date:** 2026-11-24 (minimal redesign, light theme)
 **Scope:** `index.html`, `styles.css`, `main.js`, `fonts/`, `_headers`, `serve.py` (local server), tests, scripts and CI workflows.
 **Verdict:** 🟡 **Approved with risks** (one low, accepted residual risk; see below).
 

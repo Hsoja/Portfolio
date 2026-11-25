@@ -41,8 +41,11 @@
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-in');
-        io.unobserve(entry.target);
+        const el = entry.target;
+        el.classList.add('is-in');
+        io.unobserve(el);
+        const d = Number(el.dataset.delay || 0);
+        setTimeout(() => el.classList.add('is-done'), 450 + clamp(d, 0, 8) * 80);
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
     revealEls.forEach((el) => io.observe(el));
@@ -54,11 +57,7 @@
   const nav = $('[data-nav]');
   const links = $$('[data-nav-link]');
 
-    const shadow = () => { if (nav) nav.classList.toggle('is-scrolled', window.scrollY > 8); };
-  shadow();
-  window.addEventListener('scroll', shadow, { passive: true });
-
-  if ('IntersectionObserver' in window && links.length) {
+    if ('IntersectionObserver' in window && links.length) {
     const map = new Map();
     links.forEach((a) => {
       const id = (a.getAttribute('href') || '').slice(1);
@@ -73,7 +72,6 @@
       });
     };
     const onScrollNav = () => {
-      if (nav) nav.classList.toggle('is-scrolled', window.scrollY > 8);
       if (window.scrollY < 240) setActive(null);   // arriba del todo: ningún enlace activo
     };
     onScrollNav();
@@ -148,7 +146,7 @@
   /* Los cambios de preferencia de movimiento aplican al instante */
   reduceMQ.addEventListener('change', () => {
     if (!motionOK()) {
-      revealEls.forEach((el) => el.classList.add('is-in'));
+      revealEls.forEach((el) => el.classList.add('is-in', 'is-done'));
       layers.forEach((l) => { l.el.style.removeProperty('--px'); l.el.style.removeProperty('--py'); });
     } else {
       request();
