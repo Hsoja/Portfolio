@@ -25,7 +25,7 @@ const parseCsp = (s) => Object.fromEntries(
 );
 
 // Only these external hosts may appear in links.
-const ALLOWED_HOSTS = new Set(['github.com', 'hsoja.github.io']);
+const ALLOWED_HOSTS = new Set(['github.com', 'hsoja.github.io', 'www.linkedin.com']);
 
 test('CSP meta tag exists and is strict', () => {
   assert.ok(metaCsp, 'missing CSP meta tag');

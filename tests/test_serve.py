@@ -131,7 +131,11 @@ def test_only_same_origin_assets():
 
 
 def test_external_links_are_safe_and_documented():
-    allowed = ("https://github.com/Hsoja", "https://hsoja.github.io/TradePro/")
+    allowed = (
+        "https://github.com/Hsoja",
+        "https://hsoja.github.io/TradePro/",
+        "https://www.linkedin.com/in/katherine-gonz",
+    )
     for tag in re.findall(r"<a\s[^>]*href=\"https?://[^\"]+\"[^>]*>", HTML):
         href = re.search(r'href="([^"]+)"', tag).group(1)
         assert href.startswith("https://") and href.startswith(allowed), href
