@@ -509,6 +509,67 @@ svg { display: block; max-width: 100%; }
 .px-h{fill:#9a6535}
 .px-y{fill:#ffd84d}
 
+/* ==========================================================================
+   Micro-interacciones (main.js §5). Mismos colores y tipografía del sitio.
+   Todo usa transition .3s ease; el movimiento continuo va con requestAnimationFrame.
+   ========================================================================== */
+
+/* 5 · UNDERLINE DRAW — menú y enlaces de cada proyecto (Código / Sitio en vivo).
+   El subrayado se dibuja de izquierda a derecha en el color de acento. */
+.nav__links a, .case__links a { position: relative; }
+.nav__links a::after, .case__links a::after {
+  content: ""; position: absolute; left: 14px; right: 14px; bottom: 3px; height: 2px; border-radius: 2px;
+  background: var(--coral); pointer-events: none;
+  transform: scaleX(0); transform-origin: left center; transition: transform .3s ease;
+}
+@media (max-width: 819px) { .nav__links a::after { left: 10px; right: 10px; } }
+.case__links a::after { left: 22px; right: 22px; bottom: 10px; background: var(--tint-ink); }
+.nav__links a:hover::after, .nav__links a:focus-visible::after,
+.case__links a:hover::after, .case__links a:focus-visible::after { transform: scaleX(1); }
+
+/* Solo con mouse fino: en táctil nada de esto existe */
+@media (hover: hover) and (pointer: fine) {
+  /* 1 · HOVER REVEAL — copia del mockup de la tarjeta dentro de un círculo */
+  .peek {
+    position: fixed; left: 0; top: 0; z-index: 40; width: 260px; aspect-ratio: 1; padding: 34px;
+    display: grid; place-items: center; overflow: hidden;
+    background: var(--tint-soft, var(--paper)); pointer-events: none;
+    transform: translate3d(var(--x, 0px), var(--y, 0px), 0);
+    clip-path: circle(0px at 50% 50%); transition: clip-path .3s ease;
+    will-change: transform, clip-path;
+  }
+  .peek.is-on { clip-path: circle(130px at 50% 50%); }
+  .peek .mock { width: 100%; box-shadow: var(--shadow-1); }
+  .js .case__name { cursor: default; }
+
+  /* 2 · BOTÓN MAGNÉTICO — el botón se acerca, el texto va al revés */
+  .is-magnetic { translate: var(--mx, 0px) var(--my, 0px); }
+  .mag__inner { display: inline-flex; align-items: center; gap: inherit; translate: var(--tx, 0px) var(--ty, 0px); }
+
+  /* 3 · TILT 3D — las 4 tarjetas de proyecto (máx. 12°) con sombra suave */
+  .js .case {
+    transform: perspective(1800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transition: box-shadow .3s ease;
+  }
+  .case.is-tilting { box-shadow: 0 22px 48px rgba(74, 48, 24, .10); }
+
+  /* 4 · SPOTLIGHT — resplandor azul claro en "Sobre mí"; no oscurece nada */
+  .about::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s ease;
+    background: radial-gradient(460px circle at var(--sx, 50%) var(--sy, 50%), rgba(127, 188, 230, .22), transparent 70%);
+  }
+  .about.is-lit::before { opacity: 1; }
+  .about > .wrap { position: relative; }
+  .about.is-lit .about__list .card {
+    background-image: radial-gradient(240px circle at var(--gx, 50%) var(--gy, 50%), rgba(127, 188, 230, .26), transparent 75%);
+  }
+  .about__list .card {
+    transition: opacity 400ms var(--ease) calc(var(--d, 0) * 80ms), transform var(--t) var(--ease),
+                box-shadow var(--t) var(--ease), border-color .3s ease;
+  }
+  .about__list .card.is-under { border-color: var(--sky-fill); box-shadow: 0 0 0 4px var(--sky-soft), var(--shadow-2); }
+}
+
 /* ---------- Movimiento reducido: todo estático ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -516,4 +577,8 @@ svg { display: block; max-width: 100%; }
   [data-reveal] { opacity: 1 !important; transform: none !important; }
   .blob, .plate, .avatar, .float, .stamp { transform: none !important; }
   .stamp { transform: rotate(-4deg) !important; }
+  /* Micro-interacciones apagadas */
+  .peek, .about::before { display: none !important; }
+  .case { transform: none !important; }
+  .is-magnetic, .mag__inner { translate: none !important; }
 }
